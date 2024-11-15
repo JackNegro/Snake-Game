@@ -1,0 +1,78 @@
+*{
+    font-family: sans-serif;
+}
+body{
+    background-color: antiquewhite;
+    margin: auto;
+}
+.container{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    width: 90vw ;
+}
+.msg{
+    color: #080;
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 10px;
+
+}
+#board, .board_info{
+    min-width: 20vw;
+}
+
+#board{
+    border: solid #000 1px;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+
+#start_btn, .board_info{
+    font-size: 25px;
+}
+#over{
+    color:#e00;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 5rem;
+    position: absolute;
+    background-color: #0007;
+    display: none;
+}
+#scores-container{
+    font-size: 20px;
+    margin-top: 2px;
+}
+.board_info{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 10px;
+}
+
+#start_btn{
+    justify-self: end;
+    background: #f00;
+    color: white;
+    border-radius: 6px;
+    border: 1px solid #f10;
+    padding: 0 10px;
+}
+#scoreBoard{
+    display: inline-flex;
+}
+
+/*-------Square Games------------*/
+.square{
+    aspect-ratio: 1;
+}
+.emptySquare{
+    background: #dee;
+}
+.snakeSquare{
+    background: #080;
+}
+.foodSquare{
+    background: #e00;
+}
